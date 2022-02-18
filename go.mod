@@ -8,8 +8,8 @@ require (
 	github.com/fluxcd/helm-controller/api v0.17.0
 	github.com/fluxcd/pkg/apis/acl v0.0.3
 	github.com/fluxcd/pkg/apis/kustomize v0.3.1
-	github.com/fluxcd/pkg/apis/meta v0.10.2
-	github.com/fluxcd/pkg/runtime v0.12.5
+	github.com/fluxcd/pkg/apis/meta v0.12.0
+	github.com/fluxcd/pkg/runtime v0.13.1
 	github.com/fluxcd/source-controller/api v0.21.1
 	github.com/go-logr/logr v1.2.2
 	github.com/hashicorp/go-retryablehttp v0.6.8
@@ -21,12 +21,12 @@ require (
 	github.com/yvasiyarov/newrelic_platform_go v0.0.0-20160601141957-9c099fbc30e9 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	helm.sh/helm/v3 v3.8.0
-	k8s.io/api v0.23.1
+	k8s.io/api v0.23.2
 	k8s.io/apiextensions-apiserver v0.23.1
-	k8s.io/apimachinery v0.23.1
+	k8s.io/apimachinery v0.23.2
 	k8s.io/cli-runtime v0.23.1
-	k8s.io/client-go v0.23.1
-	sigs.k8s.io/controller-runtime v0.11.0
+	k8s.io/client-go v0.23.2
+	sigs.k8s.io/controller-runtime v0.11.1
 	sigs.k8s.io/kustomize/api v0.10.1
 	sigs.k8s.io/yaml v1.3.0
 )
@@ -117,10 +117,10 @@ require (
 	github.com/peterbourgon/diskv v2.0.1+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/prometheus/client_golang v1.11.1 // indirect
+	github.com/prometheus/client_golang v1.12.1 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
-	github.com/prometheus/common v0.28.0 // indirect
-	github.com/prometheus/procfs v0.6.0 // indirect
+	github.com/prometheus/common v0.32.1 // indirect
+	github.com/prometheus/procfs v0.7.3 // indirect
 	github.com/rubenv/sql-migrate v0.0.0-20210614095031-55d5740dbbcc // indirect
 	github.com/russross/blackfriday v1.5.2 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
@@ -140,7 +140,7 @@ require (
 	golang.org/x/net v0.0.0-20220107192237-5cfca573fb4d // indirect
 	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e // indirect
+	golang.org/x/sys v0.0.0-20220114195835-da31bd327af9 // indirect
 	golang.org/x/term v0.0.0-20210615171337-6886f2dfbf5b // indirect
 	golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac // indirect
 	gomodules.xyz/jsonpatch/v2 v2.2.0 // indirect
@@ -162,7 +162,7 @@ require (
 	oras.land/oras-go v1.1.0 // indirect
 	sigs.k8s.io/json v0.0.0-20211208200746-9f7c6b3444d2 // indirect
 	sigs.k8s.io/kustomize/kyaml v0.13.0 // indirect
-	sigs.k8s.io/structured-merge-diff/v4 v4.2.0 // indirect
+	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
 )
 
 // pin kustomize to v4.4.1
@@ -189,3 +189,5 @@ replace github.com/opencontainers/image-spec => github.com/opencontainers/image-
 
 // Fix CVE-2021-43816
 replace github.com/containerd/containerd => github.com/containerd/containerd v1.5.9
+
+replace github.com/fluxcd/source-controller/api => github.com/fluxcd/source-controller/api v0.21.3-0.20220218150424-eff68c82c57e
